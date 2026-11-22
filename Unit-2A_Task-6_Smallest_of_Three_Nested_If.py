@@ -1,0 +1,19 @@
+# Input three numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+# Find the smallest using nested if
+if a < b:
+    if a < c:
+        smallest = a
+    else:
+        smallest = c
+else:
+    if b < c:
+        smallest = b
+    else:
+        smallest = c
+
+# Display the result
+print("The smallest number is:", smallest)
